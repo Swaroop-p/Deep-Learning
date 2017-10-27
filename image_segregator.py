@@ -20,8 +20,9 @@ def main():
     for directory in directories:
         if not os.path.exists(root +"\\segregated_images\\" +directory):
             os.makedirs(root+"\\segregated_images\\"+ directory)
-        
-    train_images_listing = os.listdir(root + path1)   
+    
+    #List of all images in train data
+    train_images_list = os.listdir(root + path1)   
     
     #Specify the csv file
     reader = csv.reader(open(root + 'train.csv', 'r'))
@@ -30,7 +31,7 @@ def main():
        k, v = row
        d[k+".png"] = v
     
-    for image in train_images_listing:
+    for image in train_images_list:
         copyfile(root + path1 + image, root +"\\segregated_images\\" + d[image]+"\\" + image) 
         count += 1
         print (count)
