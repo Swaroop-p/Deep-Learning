@@ -23,6 +23,7 @@ def main():
         
     train_images_listing = os.listdir(root + path1)   
     
+    #Specify the csv file
     reader = csv.reader(open(root + 'train.csv', 'r'))
     d = {}
     for row in reader:
