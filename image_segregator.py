@@ -10,9 +10,8 @@ import os, sys
 import csv
 from shutil import copyfile
 
-
-
 def main():
+    # Creating directories for all the classes or categories the images need to be segregated into
     directories = ["beans","cake","candy","cereal","chips","chocolate","coffee","corn","fish","flour","honey","jam","juice","milk","nuts","oil","pasta","rice","soda","spices","sugar","tea","tomatosauce","vinegar","water"]
     root = "C:/Users/Swaroop.Padala/Desktop/HackerEarth_IndiaHacks_ML/a0409a00-8-dataset_dp/"    
     path1 = "train_img/"   
