@@ -14,7 +14,7 @@ import os
 pixel_size_x = 227
 pixel_size_y = 227
 
-# WHICH FOLDER TO LOOK FOR
+# DESTINATION FOLDER'S PREFIX NAME
 DEST_IMAGES_PREFIX = 'beans'
 
 # PATH OF THE IMAGES THAT NEED TO BE RESIZED
@@ -42,12 +42,9 @@ def resizeImage(infile, output_dir="", size=(pixel_size_x,pixel_size_y)):
             print (e)
 
 if __name__=="__main__":
-    output_dir = DEST_IMAGES_PREFIX+"_resized_images_"+str(pixel_size_x)+'X'+str(pixel_size_y)    
-    
+    output_dir = DEST_IMAGES_PREFIX+"_resized_images_"+str(pixel_size_x)+'X'+str(pixel_size_y)   
     dir = os.getcwd()
-
     if not os.path.exists(os.path.join(dir,output_dir)):
         os.mkdir(output_dir)
-
     for file in os.listdir(source_images_path):
         resizeImage(file,output_dir)
