@@ -5,7 +5,7 @@ Created on Sat Oct 28 21:20:07 2017
 @author: Swaroop.Padala
 """
 # PYTHON3 script
-# Run this script to resize images and save to the directory where the script is present
+# Run this script to resize images and save to a directory where the script is present
 
 import PIL.Image as Image
 import os
