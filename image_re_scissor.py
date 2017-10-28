@@ -4,13 +4,13 @@ Created on Sat Oct 28 21:20:07 2017
 
 @author: Swaroop.Padala
 """
+# PYTHON3 script
+# Run this script to resize images and save to the directory where the script is present
 
 import PIL.Image as Image
 import os
 
-#Run this script to resize images and save to the directory where the script is present
-
-#Set the resize values
+# Set the resize values
 pixel_size_x = 227
 pixel_size_y = 227
 
@@ -18,7 +18,7 @@ pixel_size_y = 227
 DEST_IMAGES_PREFIX = 'beans'
 
 # PATH OF THE IMAGES THAT NEED TO BE RESIZED
-source_images_path = "C:/Users/Swaroop.Padala/Desktop/HackerEarth_IndiaHacks_ML/a0409a00-8-dataset_dp/segregated_images/beans/"
+source_images_path = "C:/Users/blah/blah/blah"
 
 # IF YOU WANT ORIGINAL NAME, SET THE VARIABLE resized_image_suffix = ''
 resized_image_suffix = 'resized'
