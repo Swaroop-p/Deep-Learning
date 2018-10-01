@@ -1,7 +1,8 @@
 # README #
 
-- A python script to segregate images into respective classes/categories
+## Contains Utility scripts for deep learning image  classification problems
 
-- A python script to resize all images into desired pixelXpixel from source location to destination location
+- Python script to segregate images into respective classes/categories
 
-- These is a helper scripts for a deep learing image classification problem
+- Python script to resize all images into desired pixelXpixel from source location to destination location
+
